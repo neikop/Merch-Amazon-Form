@@ -1,7 +1,7 @@
 {
   "name": "merch-amazon-form",
   "version": "1.0.0",
-  "description": "This is Caro game for Ai-chan <3",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon -w source --exec \"babel-node source --presets env\"",
