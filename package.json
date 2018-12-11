@@ -1,0 +1,21 @@
+{
+  "name": "merch-amazon-form",
+  "version": "1.0.0",
+  "description": "This is Caro game for Ai-chan <3",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -w source --exec \"babel-node source --presets env\"",
+    "prestart": "npm install",
+    "start": "node source"
+  },
+  "author": "Neikop",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}

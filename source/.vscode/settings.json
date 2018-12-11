@@ -1,0 +1,7 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}"
+    ],
+    "appService.deploySubpath": "",
+    "appService.defaultWebAppToDeploy": "/subscriptions/008e5fb2-bf2d-40f2-85c1-555bb916a163/resourceGroups/appsvc_rg_linux_centralus/providers/Microsoft.Web/sites/merch"
+}
