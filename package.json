@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon -w source --exec \"babel-node source --presets env\"",
-    "postinstall": "cd source && npm run build",
+    "postinstall": "cd source && react-scripts build",
     "prestart": "npm install",
     "start": "node source"
   },
