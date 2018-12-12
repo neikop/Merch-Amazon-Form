@@ -1,15 +1,15 @@
 const express = require('express');
 const http = require('http');
 const path = require('path');
-const bodyParser = require('body-parser');
-const fs = require('fs');
+// const bodyParser = require('body-parser');
+// const fs = require('fs');
 
 let app = express();
 let server = http.createServer(app);
 
 app.use('/', express.static(path.join(__dirname, 'build')));
-app.use(bodyParser.urlencoded({extended: false}));
-app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({extended: false}));
+// app.use(bodyParser.json());
 
 const url = './source/public/template.json';
 
