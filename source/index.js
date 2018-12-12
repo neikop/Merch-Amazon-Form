@@ -22,7 +22,7 @@ app.get('/template', function(request, response) {
 app.post('/template', function(request, response) {
   const template = request.body;
   const jsonText = JSON.stringify(template);
-  fs.writeFile(url, jsonText, (error) => {
+  fs.writeFile(url, jsonText, function(error) {
     if (!error) response.end();
   });
 });
