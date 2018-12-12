@@ -13,13 +13,13 @@ app.use(bodyParser.json());
 
 const url = './source/public/template.json';
 
-app.get('/template', (request, response) => {
+app.get('/template', function(request, response) {
   const jsonText = fs.readFileSync(url);
   const template = JSON.parse(jsonText);
   response.json(template);
 });
 
-app.post('/template', (request, response) => {
+app.post('/template', function(request, response) {
   const template = request.body;
   const jsonText = JSON.stringify(template);
   fs.writeFile(url, jsonText, (error) => {
@@ -28,6 +28,6 @@ app.post('/template', (request, response) => {
 });
 
 const port = process.env.PORT || 3003;
-server.listen(port, () => {
+server.listen(port, function() {
   console.log('Server is running on: ' + port);
 });
