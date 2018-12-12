@@ -5,17 +5,14 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon -w source --exec \"babel-node source --presets env\"",
-    "postinstall": "cd source && npm run build",
     "prestart": "npm install",
-    "start": "node source",
-    "build": "react-scripts build"
+    "start": "node source"
   },
   "author": "Neikop",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "^4.16.3",
-    "react-scripts": "^2.1.1"
+    "express": "^4.16.3"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
