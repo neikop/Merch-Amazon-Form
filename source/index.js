@@ -7,7 +7,7 @@ const fs = require('fs');
 let app = express();
 let server = http.createServer(app);
 
-app.use('/', express.static(path.join(__dirname, 'public')));
+app.use('/', express.static(path.join(__dirname, 'build')));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
