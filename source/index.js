@@ -13,21 +13,21 @@ app.use(bodyParser.json());
 
 const url = './source/public/template.json';
 
-app.get('/template', function(request, response) {
+app.get('/template', (request, response) => {
   const jsonText = fs.readFileSync(url);
   const template = JSON.parse(jsonText);
   response.json(template);
 });
 
-app.post('/template', function(request, response) {
+app.post('/template', (request, response) => {
   const template = request.body;
   const jsonText = JSON.stringify(template);
-  fs.writeFile(url, jsonText, function(error) {
+  fs.writeFile(url, jsonText, (error) => {
     if (!error) response.end();
   });
 });
 
 const port = process.env.PORT || 3003;
-server.listen(port, function() {
+server.listen(port, () => {
   console.log('Server is running on: ' + port);
 });
